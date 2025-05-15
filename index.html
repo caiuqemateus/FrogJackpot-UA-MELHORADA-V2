@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="viewport" content="width=1200, initial-scale=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    
+    <title>Loteria dos Sapos - Design Moderno</title>
+    <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="game-header">
+            <div class="logo">
+                <span class="logo-icon">🐸</span>
+                <h1 class="logo-text">Loteria dos Sapos</h1>
+            </div>
+            <nav class="nav-buttons">
+                <button class="nav-button primary">Jogar Agora</button>
+                <button class="nav-button">Regras</button>
+                <button class="nav-button">Histórico</button>
+                <button class="nav-button"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings"><circle cx="12" cy="12" r="3"/><path d="M19.4 15c.8 1.7.9 3.5.1 5.1-8.6 8.6-22.4 8.6-31 0a5.4 5.4 0 0 1 0-7.6"/><path d="M12 5V3"/><path d="M17 6.4L18.4 5"/><path d="M19 12h2"/><path d="M17 17.6L18.4 19"/><path d="M12 19v2"/><path d="M7 17.6L5.6 19"/><path d="M5 12H3"/><path d="M7 6.4L5.6 5"/></svg> Configurações</button>
+            </nav>
+        </header>
+
+        <div class="main-content">
+            <section class="hero">
+                <div class="hero-content">
+                    <h2 class="hero-title">A Loteria Mais Divertida da Web!</h2>
+                    <p class="hero-subtitle">Escolha seus sapos da sorte e concorra a prêmios incríveis. Uma experiência de loteria online moderna e envolvente.</p>
+                    <div class="hero-buttons">
+                        <button class="hero-button primary">Participar</button>
+                        <button class="hero-button secondary">Como Funciona?</button>
+                    </div>
+                </div>
+                <div class="hero-decoration" style="background: linear-gradient(45deg, var(--primary-color) 30%, var(--secondary-color) 90%); border-radius: 50%;"></div>
+            </section>
+
+            <aside class="sidebar">
+                <div class="user-balance">
+                    <div class="balance-header">
+                        <h3 class="balance-title">Seu Saldo</h3>
+                        <div class="balance-actions">
+                            <button class="balance-action"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus-circle"><circle cx="12" cy="12" r="10"/><path d="M12 8v8"/><path d="M8 12h8"/></svg></button>
+                            <button class="balance-action"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus-circle"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/></svg></button>
+                        </div>
+                    </div>
+                    <div class="balance-amount">
+                        <p class="balance-label">Saldo Atual</p>
+                        <p class="balance-value">R$ 2.172,50</p>
+                    </div>
+                    <div class="balance-buttons">
+                        <button class="balance-button primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wallet"><path d="M21 12V6a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6"/><path d="M17 13v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="3 9 9 3 15 9"/></svg> Depositar</button>
+                        <button class="balance-button secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down-to-line"><path d="M12 17v4"/><path d="M5 21h14"/><path d="M12 11l-4 4 4 4"/></svg> Sacar</button>
+                    </div>
+                </div>
+
+                <div class="jackpot">
+                    <h3 class="jackpot-title">Jackpot Atual</h3>
+                    <p class="jackpot-amount">R$ 100.097,06</p>
+                    <p class="jackpot-description">O prêmio está crescendo! Faça sua aposta e concorra.</p>
+                    <div class="jackpot-timer">
+                        <div class="timer-box">
+                            <span class="timer-value">23</span>
+                            <span class="timer-label">Horas</span>
+                        </div>
+                        <div class="timer-box">
+                            <span class="timer-value">59</span>
+                            <span class="timer-label">Minutos</span>
+                        </div>
+                        <div class="timer-box">
+                            <span class="timer-value">32</span>
+                            <span class="timer-label">Segundos</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <section class="game-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-title-icon">🐸</span>
+                    Escolha seus Sapos da Sorte
+                </h2>
+                <div class="section-actions">
+                     <!-- Botão removido -->
+                </div>
+            </div>
+            <div class="frog-grid">
+                <div class="frog-card frog-type-1">
+                    <div class="frog-card-inner">
+                        <img src="/api/placeholder/80/80/00E676/FFFFFF?text=S1" alt="Sapo 1" class="frog-image">
+                    </div>
+                    <div class="frog-card-bg"></div>
+                </div>
+                <div class="frog-card frog-type-2">
+                    <div class="frog-card-inner">
+                        <img src="/api/placeholder/80/80/00BCD4/FFFFFF?text=S2" alt="Sapo 2" class="frog-image">
+                    </div>
+                    <div class="frog-card-bg"></div>
+                </div>
+                <div class="frog-card frog-type-3">
+                    <div class="frog-card-inner">
+                        <img src="/api/placeholder/80/80/FF4081/FFFFFF?text=S3" alt="Sapo 3" class="frog-image">
+                    </div>
+                    <div class="frog-card-bg"></div>
+                </div>
+                <div class="frog-card frog-type-4">
+                    <div class="frog-card-inner">
+                        <img src="/api/placeholder/80/80/FFAB00/FFFFFF?text=S4" alt="Sapo 4" class="frog-image">
+                    </div>
+                    <div class="frog-card-bg"></div>
+                </div>
+                <div class="frog-card frog-type-5">
+                    <div class="frog-card-inner">
+                        <img src="/api/placeholder/80/80/9C27B0/FFFFFF?text=S5" alt="Sapo 5" class="frog-image">
+                    </div>
+                    <div class="frog-card-bg"></div>
+                </div>
+                <div class="frog-card frog-type-6">
+                    <div class="frog-card-inner">
+                        <img src="/api/placeholder/80/80/607D8B/FFFFFF?text=S6" alt="Sapo 6" class="frog-image">
+                    </div>
+                    <div class="frog-card-bg"></div>
+                </div>
+                <!-- Repete os sapos de 7 a 12 -->
+                <div class="frog-card frog-type-1">
+                    <div class="frog-card-inner">
+                        <img src="/api/placeholder/80/80/00E676/FFFFFF?text=S7" alt="Sapo 7" class="frog-image">
+                    </div>
+                    <div class="frog-card-bg"></div>
+                </div>
+                <div class="frog-card frog-type-2">
+                    <div class="frog-card-inner">
+                        <img src="/api/placeholder/80/80/00BCD4/FFFFFF?text=S8" alt="Sapo 8" class="frog-image">
+                    </div>
+                    <div class="frog-card-bg"></div>
+                </div>
+                <div class="frog-card frog-type-3">
+                    <div class="frog-card-inner">
+                        <img src="/api/placeholder/80/80/FF4081/FFFFFF?text=S9" alt="Sapo 9" class="frog-image">
+                    </div>
+                    <div class="frog-card-bg"></div>
+                </div>
+                <div class="frog-card frog-type-4">
+                    <div class="frog-card-inner">
+                        <img src="/api/placeholder/80/80/FFAB00/FFFFFF?text=S10" alt="Sapo 10" class="frog-image">
+                    </div>
+                    <div class="frog-card-bg"></div>
+                </div>
+                <div class="frog-card frog-type-5">
+                    <div class="frog-card-inner">
+                        <img src="/api/placeholder/80/80/9C27B0/FFFFFF?text=S11" alt="Sapo 11" class="frog-image">
+                    </div>
+                    <div class="frog-card-bg"></div>
+                </div>
+                <div class="frog-card frog-type-6">
+                    <div class="frog-card-inner">
+                        <img src="/api/placeholder/80/80/607D8B/FFFFFF?text=S12" alt="Sapo 12" class="frog-image">
+                    </div>
+                    <div class="frog-card-bg"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="selected-frogs">
+            <div class="selected-frogs-header">
+                <h3 class="selected-frogs-title">Sapos Selecionados</h3>
+                <span class="selected-frogs-count">0/6</span>
+            </div>
+            <div class="selected-frogs-grid">
+                <div class="selected-frog-slot empty"></div>
+                <div class="selected-frog-slot empty"></div>
+                <div class="selected-frog-slot empty"></div>
+                <div class="selected-frog-slot empty"></div>
+                <div class="selected-frog-slot empty"></div>
+                <div class="selected-frog-slot empty"></div>
+            </div>
+        </section>
+
+        <section class="bet-controls">
+            <div class="bet-input-group">
+                <span class="bet-currency">R$</span>
+                <input type="number" class="bet-input" placeholder="Valor da Aposta">
+            </div>
+            <div class="bet-multiplier">
+                <button class="multiplier-button">-</button>
+                <input type="number" class="multiplier-value" value="1">
+                <button class="multiplier-button">+</button>
+            </div>
+        </section>
+
+        <div class="bet-amount-presets">
+            <button class="preset-button">R$ 10</button>
+            <button class="preset-button active">R$ 50</button>
+            <button class="preset-button">R$ 100</button>
+            <button class="preset-button">R$ 500</button>
+            <button class="preset-button">Máximo</button>
+        </div>
+
+        <div class="action-buttons">
+            <button class="action-button secondary"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rotate-ccw"><path d="M3 12a9 9 0 1 1 15.02 8.7"/><path d="M3 12H5v2"/></svg> Limpar Aposta</button>
+            <button class="action-button primary"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play"><polygon points="5 3 19 12 5 21 5 3"/></svg> Fazer Aposta</button>
+            <button class="action-button warning"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap"><polygon points="13 2 3 14 12 15 11 22 21 10 12 9 13 2"/></svg> Aposta Rápida</button>
+        </div>
+        <section class="game-results">
+            <div class="results-header">
+                <h2 class="results-title">Resultado da Rodada</h2>
+            </div>
+            <div class="results-grid">
+                <div class="result-frog"><img src="/api/placeholder/80/80/00E676/FFFFFF?text=S1" alt="Sapo 1"></div>
+                <div class="result-frog winner"><img src="/api/placeholder/80/80/00BCD4/FFFFFF?text=S2" alt="Sapo 2"></div>
+                <div class="result-frog"><img src="/api/placeholder/80/80/FF4081/FFFFFF?text=S3" alt="Sapo 3"></div>
+                <div class="result-frog"><img src="/api/placeholder/80/80/FFAB00/FFFFFF?text=S4" alt="Sapo 4"></div>
+                <div class="result-frog"><img src="/api/placeholder/80/80/9C27B0/FFFFFF?text=S5" alt="Sapo 5"></div>
+                <div class="result-frog"><img src="/api/placeholder/80/80/607D8B/FFFFFF?text=S6" alt="Sapo 6"></div>
+            </div>
+            <p class="result-message win">Você ganhou! O sapo sortudo foi o S2.</p>
+        </section>
+
+        <section class="game-history">
+            <div class="history-header">
+                <h2 class="history-title">Histórico de Jogos</h2>
+                <button class="section-action">Ver Mais</button>
+            </div>
+            <ul class="history-list">
+                <li class="history-item">
+                    <div class="history-details">
+                        <p class="history-bet">Aposta: R$ 50 (Sapo 3, Sapo 6)</p>
+                        <span class="history-date">Ontem às 20:15</span>
+                    </div>
+                    <span class="history-result lose">Perdeu</span>
+                </li>
+                <li class="history-item">
+                    <div class="history-details">
+                        <p class="history-bet">Aposta: R$ 100 (Sapo 2)</p>
+                        <span class="history-date">Ontem às 18:50</span>
+                    </div>
+                    <span class="history-result win">+ R$ 350</span>
+                </li>
+                <li class="history-item">
+                    <div class="history-details">
+                        <p class="history-bet">Aposta: R$ 25 (Sapo 1, Sapo 4, Sapo 5)</p>
+                        <span class="history-date">Ontem às 15:30</span>
+                    </div>
+                    <span class="history-result lose">Perdeu</span>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="game-info">
+    <div class="current-datetime"></div>
+    <div class="current-user"></div>
+</div>
+
+<div class="user-info-header">
+    <div class="datetime-display">2025-05-11 22:06:59</div>
+    <div class="user-display">amigodolanche191</div>
+</div>
+    <footer class="game-footer">
+        <p>&copy; 2025 Loteria dos Sapos. Todos os direitos reservados.</p>
+        <div class="footer-links">
+            <a href="#" class="footer-link">Termos de Serviço</a>
+            <a href="#" class="footer-link">Política de Privacidade</a>
+            <a href="#" class="footer-link">Suporte</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+        
